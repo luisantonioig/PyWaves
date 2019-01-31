@@ -220,7 +220,7 @@ class Address(object):
             self.privateKey = ''
             self.seed = ''
             self.nonce = 0
-        elif privateKey == '' or privateKey:
+        elif privateKey != '':
             print('started with private key')
             if len(privateKey) == 0:
                 raise ValueError('Empty private key not allowed')
